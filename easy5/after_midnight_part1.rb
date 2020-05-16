@@ -17,3 +17,14 @@ puts time_of_day(-3) == "23:57"
 puts time_of_day(35) == "00:35"
 puts time_of_day(-1437) == "00:03"
 puts time_of_day(3000) == "02:00"
+
+=begin
+
+launch school solution
+
+def time_of_day(delta_minutes)
+  delta_minutes = delta_minutes % MINUTES_PER_DAY
+  hours, minutes = delta_minutes.divmod(MINUTES_PER_HOUR)
+  format('%02d:%02d', hours, minutes)
+end
+=end
