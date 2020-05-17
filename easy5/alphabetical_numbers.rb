@@ -3,5 +3,15 @@ NUMBER_WORDS = %w(zero one two three four five six seven eight nine ten eleven
                   eighteen nineteen)
 
 def alphabetic_number_sort(arr)
-  #
+  arr.map { |n| NUMBER_WORDS[n] }.sort.map { |s| NUMBER_WORDS.index(s) }
+end
+
+p alphabetic_number_sort((0..19).to_a)
+
+=begin
+
+launch school solution
+
+def alphabetic_number_sort(numbers)
+  numbers.sort_by { |number| NUMBER_WORDS[number] }
 end
