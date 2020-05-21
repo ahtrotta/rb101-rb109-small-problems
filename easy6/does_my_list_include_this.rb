@@ -1,6 +1,11 @@
+=begin
 def include?(arr, val)
   arr.each { |obj| return true if obj == val }
   false
+=end
+
+def include?(arr, val)
+  arr.index(val) ? true : false
 end
 
 puts include?([1,2,3,4,5], 3) == true
