@@ -1,5 +1,9 @@
 def find_dup(arr)
-  #
+  new_arr = []
+  arr.each do |num|
+    return num if new_arr.include?(num)
+    new_arr << num
+  end
 end
 
 puts find_dup([1, 5, 3, 1]) == 1
