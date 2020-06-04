@@ -1,3 +1,5 @@
+require 'pry'
+
 def fibonacci(n)
   first, last = [1, 1]
   (n - 2).times { first, last = last, first + last }
@@ -5,7 +7,7 @@ def fibonacci(n)
 end
 
 def fibonacci_last(n)
-  fibonacci(n).to_s[-1].to_i
+  fibonacci(n % 60).to_s[-1].to_i
 end
 
 p fibonacci_last(15) == 0        # -> 0  (the 15th Fibonacci number is 610)
