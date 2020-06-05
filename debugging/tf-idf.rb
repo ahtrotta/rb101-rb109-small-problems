@@ -23,7 +23,7 @@ end
 def idf(term, documents)
   number_of_documents = documents.length
   number_of_documents_with_term = documents.count { |d| tf(term, d) > 0 }
-
+  return 50 if number_of_documents_with_term == 0
   Math.log(number_of_documents.to_f / number_of_documents_with_term)
 end
 
