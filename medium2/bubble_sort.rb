@@ -1,13 +1,14 @@
 def bubble_sort!(arr)
-  sorted = true
+  end_ind = arr.size - 1
   loop do
     sorted = true
-    (arr.size - 1).times do |i|
+    end_ind.times do |i|
       if arr[i] > arr[i + 1]
         arr[i], arr[i + 1] = arr[i + 1], arr[i]
         sorted = false
       end
     end
+    end_ind -= 1
     break if sorted
   end
 end
