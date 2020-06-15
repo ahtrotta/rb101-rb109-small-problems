@@ -21,6 +21,8 @@ def egyptian(rational)
   arr
 end
 
+binding.pry
+
 p egyptian(Rational(2, 1))    # -> [1, 2, 3, 6]
 p egyptian(Rational(137, 60)) # -> [1, 2, 3, 4, 5]
 p egyptian(Rational(3, 1))    # -> [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 230, 57960]
