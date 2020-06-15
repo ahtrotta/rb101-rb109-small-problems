@@ -1,5 +1,5 @@
 vehicles = [
-  'car', 'car', 'truck', 'car', 'SUV', 'truck',
+  'car', 'cAr', 'truck', 'Car', 'SUV', 'truck',
   'motorcycle', 'motorcycle', 'car', 'truck'
 ]
 
@@ -17,7 +17,7 @@ vehicles = [
 # end
 
 def count_occurences(arr)
-  hash = arr.each_with_object(Hash.new(0)) { |auto, hsh| hsh[auto] += 1 }
+  hash = arr.each_with_object(Hash.new(0)) { |auto, h| h[auto.downcase] += 1 }
   hash.each { |key, value| puts "#{key} => #{value}" }
   nil
 end
