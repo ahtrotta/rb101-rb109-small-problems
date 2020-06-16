@@ -1,3 +1,13 @@
+def prod(n)
+  return 1 if n == 0
+  n * prod(n - 1)
+end
+
+def add(n)
+  return 0 if n == 0
+  n + add(n - 1)
+end
+
 integer = nil
 
 loop do
