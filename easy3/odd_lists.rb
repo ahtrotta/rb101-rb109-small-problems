@@ -5,8 +5,12 @@ def oddities(array)
   new_arr
 =end
 
-def oddities(array)
-  (1..(array.size)).select(&:odd?).map { |elem| array[elem - 1] }
+#def oddities(array)
+#  (1..(array.size)).select(&:odd?).map { |elem| array[elem - 1] }
+#end
+
+def oddities(arr)
+  (0...arr.size).select(&:odd?).map { |i| arr[i] }
 end
 
 puts oddities([2, 3, 4, 5, 6]) == [2, 4, 6]
