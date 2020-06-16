@@ -10,7 +10,7 @@ def oddities(array)
 #end
 
 def oddities(arr)
-  (0...arr.size).select(&:odd?).map { |i| arr[i] }
+  (0...arr.size).select(&:even?).map { |i| arr[i] }
 end
 
 puts oddities([2, 3, 4, 5, 6]) == [2, 4, 6]
