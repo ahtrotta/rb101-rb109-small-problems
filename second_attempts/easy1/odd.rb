@@ -19,8 +19,13 @@ ALGORITHM:
 #  remainder == 1
 #end
 
+#def is_odd?(int)
+#  (int / 2) == ((int - 1) / 2)
+#end
+
+# further exploration
 def is_odd?(int)
-  (int / 2) == ((int - 1) / 2)
+  int.remainder(2).abs == 1
 end
 
 # test cases
