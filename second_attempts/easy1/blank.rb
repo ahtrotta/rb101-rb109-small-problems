@@ -11,7 +11,6 @@ ALGORITHM:
 =end
 
 def
-  #
 end
 
 # test cases
