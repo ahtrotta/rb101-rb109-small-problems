@@ -25,5 +25,4 @@ prompt "#{first} - #{second} = #{first - second}"
 prompt "#{first} * #{second} = #{first * second}"
 prompt "#{first} / #{second} = #{first / second}"
 prompt "#{first} % #{second} = #{first % second}"
-prompt "#{first} ** #{second} = #{first ** second}"
-
+prompt "#{first} ** #{second} = #{first**second}"
