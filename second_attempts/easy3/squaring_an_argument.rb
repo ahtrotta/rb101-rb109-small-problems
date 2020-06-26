@@ -19,12 +19,34 @@ def square(int)
 end
 
 #further explorations
+#def power(int, p)
+#  pwr = int
+#  (p - 1).times do
+#    pwr = multiply(pwr, int)
+#  end
+#  pwr
+#end
+
+#def power(int, p)
+#  pwr = int
+#  while p > 1
+#    pwr = multiply(pwr, int)
+#    p -= 1
+#  end
+#  pwr
+#end
+
 def power(int, p)
-  pwr = int
-  (p - 1).times do
-    pwr = multiply(pwr, int)
+  prod = 1
+  if p.odd?
+    prod = int
+    p -= 1
   end
-  pwr
+  while p > 0
+    prod *= multiply(int, int)
+    p -= 2
+  end
+  prod
 end
 
 # test cases
