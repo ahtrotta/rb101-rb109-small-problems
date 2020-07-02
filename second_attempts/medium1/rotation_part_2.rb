@@ -7,6 +7,8 @@ INPUT(S):
 OUTPUTS(S):
 
 ALGORITHM:
+- convert number to string
+- slice string 
 
 =end
 
@@ -15,7 +17,7 @@ def rotate_string(str)
 end
 
 def rotate_rightmost_digits(num, digits)
-
+  (num.to_s[0...-digits] + rotate_string(num.to_s[-digits..-1])).to_i
 end
 
 # test cases
